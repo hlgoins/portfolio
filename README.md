@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Purpose
-The portfolio of Haley L Goins. Contains a short biography and all current projects.
+The portfolio of Haley L Goins. Contains a short biography and current projects.
 
 ## Built with
 * HTML ☑️
