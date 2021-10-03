@@ -1,14 +1,14 @@
 # Portfolio
 
 ## Purpose
-A portfolio listing all past and current projects, miscellaneous works that would interest potential employers. Take a look!
+The portfolio of Haley L Goins. Contains a short biography and current projects.
 
 ## Built with
 * HTML ☑️
 * CSS ☑️
 
 ## Website
-https://github.com/hlgoins
+https://hlgoins.github.io/portfolio/
 
 ## Contribution
 Haley L Goins 🙇🏾‍♀️
