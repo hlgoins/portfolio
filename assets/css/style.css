@@ -94,6 +94,10 @@ nav li a:hover, a:visited{
     padding: 5px 10px 5px 10px;
 }
 
+#main a:link, a:visited{
+    color: var(--main-accent);
+}
+
 .my-info{
     padding: 90px;
     margin: 90px;
