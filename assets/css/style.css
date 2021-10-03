@@ -1,6 +1,9 @@
+/* IMPORTANT */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 :root{
-    --teal: rgb(114, 197, 197);
-    --grey: #333;
+    --main-color: rgb(69, 95, 91);
 }
 
 *{
@@ -9,15 +12,17 @@
     box-sizing: border-box;
 }
 
+/* IMPORTANT */
+
 body{
-    background-color: #f6f6ff;
-    color: #27405c;
-    font-family: Arial, "Helvetica", sans-serif;
+    background-color: #f9f9f9;
+    font-family: 'Inconsolata', monospace;
 }
 
+/* HEADER STYLES START */
 header{
-    background-color: #333;
-    padding: 10px 20px;
+    background-color: #fff;
+    padding: 10px 10px 10px 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -27,58 +32,144 @@ header h1{
     font-weight: bold;
     font-size: 30px;
     display: inline;
-    margin: 0;
-    color: #333;
+    margin: 0px;
+    color: var(--main-color);
 }
 
 header nav{
     margin: 20px 0px;
 }
+/* HEADER STYLES START */
 
-header nav ul li{
+/* NAV STYLES START */
+nav ul li{
     font-size: 20;
     list-style-type: none;
     display: inline;
+    color: var(--main-color);
+    text-decoration: none;
+    /*border-bottom: 3px solid var(--main-color);*/
 }
 
-section ul li{
-    display: inline;
+nav li a:link{
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 3px solid var(--main-color);
 }
 
+nav li a:hover{
+    text-decoration: none;
+    color: rgb(83, 114, 109);
+    border-bottom: none;
+}
 
+nav li a:visited{
+    text-decoration: none;
+    border-bottom: none;
+    color: rgb(83, 114, 109);
+}
+/* NAV STYLES END */
+
+  /* FOOTER STYLES START */
+  footer{
+    padding: 10px 10px;
+    margin: 0px;
+    background-color: #fff;
+}
+  /* FOOTER STYLES END */
+
+  /* MAIN STYLES START */
+.my-intro h3{
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 15px;
+    margin: 10px;
+}
+
+.my-intro p{
+    text-align: center;
+    color: var(--main-color)
+}
+/* MAIN STYLES END */
+
+/* INFO SECTIONS START */
 #main{
-    background-color: var(--teal);
-    padding: 20px;
+    padding: 5px 10px 5px 10px;
 }
 
 .my-info{
-    padding: 20px;
-    margin: 20px;
+    padding: 90px;
+    margin: 90px;
     font-size: 15px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
 }
 
 .my-info h2{
     font-size: 20px;
+    width: 15%;
+    border-right: 3px solid var(--main-color);
+    height: 70px;
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 10px;
+
 }
 
+.my-info p{
+    width: 80%;
+    padding-left: 10px;
+}
+
+.my-info ul{
+    width: 80%;
+    padding-left: 10px;
+}
+/* INFO SECTIONS END */
+
+/* WORK SECTIONS START */
+.my-info a:link{
+    color: #1274e0;
+}
+
+.my-info a:hover{
+    text-decoration: none;
+    color: #0d4f99;
+}
+
+.my-info a:visited{
+    color: #0d4f99;
+    text-decoration: none;
+}
+/* WORK SECTIONS END */
+
+/* CONACT ME SECTIONS START */
 .my-contact{
     display: inline;
     font-size: 15px;
 }
 
-a:link{
-    color: var(--teal);
-    text-decoration: none;
-    border-bottom: 3px solid var(--teal);
+.my-link { 
+    flex: 1; 
+    margin: 0 1%;
+    text-align: center;
+  }
+
+.my-link a:link{
+    color: #1274e0;
 }
 
-a:visited{
-    color: var(--teal);
-    text-decoration: none;
-}
+  .my-link a:hover { 
+      text-decoration: none;
+      color: #0d4f99;
+  }
 
-a:hover{
-    color: var(--teal);
-    text-decoration: none;
-    border-bottom: none;
-}
+  .my-link a:visited{
+      color: #0d4f99;
+      text-decoration: none;
+  }
+  /* CONACT ME SECTIONS END */
