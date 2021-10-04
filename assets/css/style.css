@@ -7,7 +7,6 @@
     --white: #ffffff;
     --grey: #666;
     --blue: #175880;
-    --red: #cd292d;
 }
 
 *{
@@ -69,7 +68,7 @@ nav li a:hover, a:visited{
     color: var(--white);
 }
 
-#title{
+#main-title{
     padding: 5px 10px 5px 10px;
 }
 /* NAV STYLES END */
@@ -134,7 +133,7 @@ nav li a:hover, a:visited{
 }
 /* WORKS SECTION END */
 
-/* CONATCT ME SECTION START */
+/* CONTACT ME SECTION START */
 .my-contact{
     display: inline;
     font-size: 15px;
@@ -144,12 +143,12 @@ nav li a:hover, a:visited{
     flex: 1; 
     margin: 0 1%;
     text-align: center;
-  }
+}
 
-  .my-link a{
+.my-link a{
       color: var(--blue);
       font-weight: bold;
-  }
+}
   /* CONTACT ME SECTION END */
 
   /* FOOTER STYLES START */
