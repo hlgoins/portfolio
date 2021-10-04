@@ -6,7 +6,7 @@ The portfolio of Haley L Goins. Contains a short biography and current projects.
 * CSS
 
 ## Static Preview
-https://user-images.githubusercontent.com/89549816/135896765-028571a6-fcb0-4c0e-8737-390cd9250f07.png
+https://user-images.githubusercontent.com/89549816/135736337-078b3f97-71fb-4f59-a9a3-117fd86e6230.png
 
 ## Live Website
 https://hlgoins.github.io/portfolio/
