@@ -1,11 +1,13 @@
 /* IMPORTANT */
-
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 :root{
-    --main-accent: rgb(69, 95, 91);
-    --secondary-accent: #ffffff;
-    --link-unvisited: rgb(97, 141, 134);
+    --green: #6a8c7c;
+    --light-green: #84af9b;
+    --white: #ffffff;
+    --grey: #666;
+    --blue: #175880;
+    --red: #cd292d;
 }
 
 *{
@@ -13,17 +15,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* IMPORTANT */
 
 body{
     background-color: #f9f9f9;
-    font-family: 'Inconsolata', monospace;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    letter-spacing: .1em;
+    color: var(--grey);
 }
 
 /* HEADER STYLES START */
 header{
-    background-color: var(--secondary-accent);
+    background-color: #84af9b;
     padding: 10px 10px 10px 0px;
     display: flex;
     justify-content: space-between;
@@ -35,11 +38,12 @@ header h1{
     font-size: 30px;
     display: inline;
     margin: 0px;
-    color: var(--main-accent);
+    color: var(--green);
+    font-family: 'Inconsolata', monospace;
 }
 
 header nav{
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 /* HEADER STYLES START */
 
@@ -48,76 +52,67 @@ nav ul li{
     font-size: 20;
     list-style-type: none;
     display: inline;
-    color: var(--main-accent);
     text-decoration: none;
-    /*border-bottom: 3px solid var(--main-accent);*/
+    font-family: 'Inconsolata', monospace;
 }
 
-nav li a:link{
-    color: var(--main-accent);
+nav li a{
+    color: var(--white);
     text-decoration: none;
     padding: 5px;
-    border-bottom: 3px solid var(--main-accent);
+    border-bottom: 3px solid var(--white);
 }
 
 nav li a:hover, a:visited{
     text-decoration: none;
     border-bottom: none;
-    color: var(--main-accent);
+    color: var(--white);
+}
+
+#title{
+    padding: 5px 10px 5px 10px;
 }
 /* NAV STYLES END */
 
-  /* FOOTER STYLES START */
-  footer{
-    padding: 10px 10px;
-    margin: 0px;
-    background-color: var(--secondary-accent);
-}
-  /* FOOTER STYLES END */
-
-  /* MAIN STYLES START */
-.my-intro h3{
+/* MAIN HEADING STYLES START */
+.main-heading h2{
     font-size: 40px;
     text-align: center;
     padding: 15px 15px;
     margin: 10px;
+    color: #222;
+    font-family: 'Inconsolata', monospace;
 }
 
-.my-intro p{
+.main-heading p{
     text-align: center;
-    color: var(--main-accent)
+    color: var(--green);
+    font-family: 'Inconsolata', monospace;
 }
-/* MAIN STYLES END */
+/* MAIN HEADING STYLES END */
 
-/* INFO SECTIONS START */
-#main{
-    padding: 5px 10px 5px 10px;
-}
-
-#main a:link, a:hover, a:visited{
-    color: var(--main-accent);
-    text-decoration: none;
-}
+/* ABOUT ME SECTION START */
 
 .my-info{
     padding: 90px;
     margin: 90px;
     font-size: 15px;
-    border: 1px solid #eee;
-    background-color: var(--secondary-accent);
+    border: 1px solid #ebecee;
+    background-color: var(--white);
     display: flex;
     flex-direction: row;
     align-items: stretch;
 }
 
-.my-info h2{
+.my-info h3{
     font-size: 20px;
     width: 15%;
-    border-right: 3px solid var(--main-accent);
+    border-right: 3px solid var(--green);
     height: 70px;
     justify-content: flex-end;
     text-align: right;
     padding-right: 10px;
+    color: #222;
 
 }
 
@@ -130,20 +125,16 @@ nav li a:hover, a:visited{
     width: 80%;
     padding-left: 10px;
 }
-/* INFO SECTIONS END */
+/* ABOUT ME SECTION END */
 
-/* WORK SECTIONS START */
-.my-info a:link{
-    color: var(--link-unvisited);
+/* WORKS SECTION START */
+.my-info a{
+    color: var(--blue);
+    font-weight: bold;
 }
+/* WORKS SECTION END */
 
-.my-info a:hover, a:visited{
-    text-decoration: none;
-    color: var(--main-accent);
-}
-/* WORK SECTIONS END */
-
-/* CONACT ME SECTIONS START */
+/* CONATCT ME SECTION START */
 .my-contact{
     display: inline;
     font-size: 15px;
@@ -155,12 +146,18 @@ nav li a:hover, a:visited{
     text-align: center;
   }
 
-.my-link a:link{
-    color: var(--link-unvisited);
-}
-
-  .my-link a:hover, a:visited { 
-      text-decoration: none;
-      color: var(--main-accent);
+  .my-link a{
+      color: var(--blue);
+      font-weight: bold;
   }
-  /* CONACT ME SECTIONS END */
+  /* CONTACT ME SECTION END */
+
+  /* FOOTER STYLES START */
+  footer{
+    padding: 10px 10px;
+    margin: 0px;
+    background-color: var(--light-green);
+    color: var(--white);
+    font-family: 'Inconsolata', monospace;
+}
+/* FOOTER STYLES END */
