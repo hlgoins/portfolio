@@ -3,12 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 :root{
-    --green: #6a8c7c;
-    --light-green: #84af9b;
-    --white: #ffffff;
-    --grey: #666;
-    --blue: #175880;
-    --red: #cd292d;
+    --main-accent: rgb(69, 95, 91);
+    --secondary-accent: #ffffff;
+    --link-unvisited: rgb(97, 141, 134);
 }
 
 *{
@@ -21,14 +18,12 @@
 
 body{
     background-color: #f9f9f9;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    letter-spacing: .1em;
-    color: var(--grey);
+    font-family: 'Inconsolata', monospace;
 }
 
 /* HEADER STYLES START */
 header{
-    background-color: #84af9b;
+    background-color: var(--secondary-accent);
     padding: 10px 10px 10px 0px;
     display: flex;
     justify-content: space-between;
@@ -40,12 +35,11 @@ header h1{
     font-size: 30px;
     display: inline;
     margin: 0px;
-    color: var(--green);
-    font-family: 'Inconsolata', monospace;
+    color: var(--main-accent);
 }
 
 header nav{
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 /* HEADER STYLES START */
 
@@ -54,21 +48,22 @@ nav ul li{
     font-size: 20;
     list-style-type: none;
     display: inline;
+    color: var(--main-accent);
     text-decoration: none;
-    font-family: 'Inconsolata', monospace;
+    /*border-bottom: 3px solid var(--main-accent);*/
 }
 
-nav li a{
-    color: var(--white);
+nav li a:link{
+    color: var(--main-accent);
     text-decoration: none;
     padding: 5px;
-    border-bottom: 3px solid var(--white);
+    border-bottom: 3px solid var(--main-accent);
 }
 
 nav li a:hover, a:visited{
     text-decoration: none;
     border-bottom: none;
-    color: var(--white);
+    color: var(--main-accent);
 }
 /* NAV STYLES END */
 
@@ -76,9 +71,7 @@ nav li a:hover, a:visited{
   footer{
     padding: 10px 10px;
     margin: 0px;
-    background-color: var(--light-green);
-    color: var(--white);
-    font-family: 'Inconsolata', monospace;
+    background-color: var(--secondary-accent);
 }
   /* FOOTER STYLES END */
 
@@ -88,14 +81,11 @@ nav li a:hover, a:visited{
     text-align: center;
     padding: 15px 15px;
     margin: 10px;
-    color: #222;
-    font-family: 'Inconsolata', monospace;
 }
 
 .my-intro p{
     text-align: center;
-    color: var(--green);
-    font-family: 'Inconsolata', monospace;
+    color: var(--main-accent)
 }
 /* MAIN STYLES END */
 
@@ -104,12 +94,17 @@ nav li a:hover, a:visited{
     padding: 5px 10px 5px 10px;
 }
 
+#main a:link, a:hover, a:visited{
+    color: var(--main-accent);
+    text-decoration: none;
+}
+
 .my-info{
     padding: 90px;
     margin: 90px;
     font-size: 15px;
-    border: 1px solid #ebecee;
-    background-color: var(--white);
+    border: 1px solid #eee;
+    background-color: var(--secondary-accent);
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -118,12 +113,11 @@ nav li a:hover, a:visited{
 .my-info h2{
     font-size: 20px;
     width: 15%;
-    border-right: 3px solid var(--green);
+    border-right: 3px solid var(--main-accent);
     height: 70px;
     justify-content: flex-end;
     text-align: right;
     padding-right: 10px;
-    color: #222;
 
 }
 
@@ -139,9 +133,13 @@ nav li a:hover, a:visited{
 /* INFO SECTIONS END */
 
 /* WORK SECTIONS START */
-.my-info a{
-    color: var(--blue);
-    font-weight: bold;
+.my-info a:link{
+    color: var(--link-unvisited);
+}
+
+.my-info a:hover, a:visited{
+    text-decoration: none;
+    color: var(--main-accent);
 }
 /* WORK SECTIONS END */
 
@@ -157,8 +155,12 @@ nav li a:hover, a:visited{
     text-align: center;
   }
 
-  .my-link a{
-      color: var(--blue);
-      font-weight: bold;
+.my-link a:link{
+    color: var(--link-unvisited);
+}
+
+  .my-link a:hover, a:visited { 
+      text-decoration: none;
+      color: var(--main-accent);
   }
   /* CONACT ME SECTIONS END */
