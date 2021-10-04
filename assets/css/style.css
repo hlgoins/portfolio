@@ -1,6 +1,12 @@
+/* IMPORTANT */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 :root{
-    --teal: rgb(114, 197, 197);
-    --grey: #333;
+    --green: #6a8c7c;
+    --light-green: #84af9b;
+    --white: #ffffff;
+    --grey: #666;
+    --blue: #175880;
 }
 
 *{
@@ -8,16 +14,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* IMPORTANT */
 
 body{
-    background-color: #f6f6ff;
-    color: #27405c;
-    font-family: Arial, "Helvetica", sans-serif;
+    background-color: #f9f9f9;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    letter-spacing: .1em;
+    color: var(--grey);
 }
 
+/* HEADER STYLES START */
 header{
-    background-color: #333;
-    padding: 10px 20px;
+    background-color: #84af9b;
+    padding: 10px 10px 10px 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -27,58 +36,127 @@ header h1{
     font-weight: bold;
     font-size: 30px;
     display: inline;
-    margin: 0;
-    color: #333;
+    margin: 0px;
+    color: var(--green);
+    font-family: 'Inconsolata', monospace;
 }
 
 header nav{
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
+/* HEADER STYLES END */
 
-header nav ul li{
+/* NAV STYLES START */
+nav ul li{
     font-size: 20;
     list-style-type: none;
     display: inline;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
 }
 
-section ul li{
-    display: inline;
+nav li a{
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 3px solid var(--white);
 }
 
-
-#main{
-    background-color: var(--teal);
-    padding: 20px;
+nav li a:hover, a:visited{
+    text-decoration: none;
+    border-bottom: none;
+    color: var(--white);
 }
+
+#main-title{
+    padding: 5px 10px 5px 10px;
+}
+/* NAV STYLES END */
+
+/* MAIN HEADING STYLES START */
+.main-heading h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 15px;
+    margin: 10px;
+    color: #222;
+    font-family: 'Inconsolata', monospace;
+}
+
+.main-heading p{
+    text-align: center;
+    color: var(--green);
+    font-family: 'Inconsolata', monospace;
+}
+/* MAIN HEADING STYLES END */
+
+/* ABOUT ME SECTION START */
 
 .my-info{
-    padding: 20px;
-    margin: 20px;
+    padding: 90px;
+    margin: 90px;
     font-size: 15px;
+    border: 1px solid #ebecee;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
 }
 
-.my-info h2{
+.my-info h3{
     font-size: 20px;
+    width: 15%;
+    border-right: 3px solid var(--green);
+    height: 70px;
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 10px;
+    color: #222;
+
 }
 
+.my-info p{
+    width: 80%;
+    padding-left: 10px;
+}
+
+.my-info ul{
+    width: 80%;
+    padding-left: 10px;
+}
+/* ABOUT ME SECTION END */
+
+/* WORKS SECTION START */
+.my-info a{
+    color: var(--blue);
+    font-weight: bold;
+}
+/* WORKS SECTION END */
+
+/* CONTACT ME SECTION START */
 .my-contact{
     display: inline;
     font-size: 15px;
 }
 
-a:link{
-    color: var(--teal);
-    text-decoration: none;
-    border-bottom: 3px solid var(--teal);
+.my-link { 
+    flex: 1; 
+    margin: 0 1%;
+    text-align: center;
 }
 
-a:visited{
-    color: var(--teal);
-    text-decoration: none;
+.my-link a{
+      color: var(--blue);
+      font-weight: bold;
 }
+  /* CONTACT ME SECTION END */
 
-a:hover{
-    color: var(--teal);
-    text-decoration: none;
-    border-bottom: none;
+  /* FOOTER STYLES START */
+  footer{
+    padding: 10px 10px;
+    margin: 0px;
+    background-color: var(--light-green);
+    color: var(--white);
+    font-family: 'Inconsolata', monospace;
 }
+/* FOOTER STYLES END */
