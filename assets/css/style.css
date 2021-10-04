@@ -1,5 +1,4 @@
 /* IMPORTANT */
-
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 :root{
@@ -13,7 +12,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* IMPORTANT */
 
 body{
@@ -41,7 +39,7 @@ header h1{
 header nav{
     margin: 20px 0px;
 }
-/* HEADER STYLES START */
+/* HEADER STYLES END */
 
 /* NAV STYLES START */
 nav ul li{
@@ -50,7 +48,6 @@ nav ul li{
     display: inline;
     color: var(--main-accent);
     text-decoration: none;
-    /*border-bottom: 3px solid var(--main-accent);*/
 }
 
 nav li a:link{
@@ -67,34 +64,26 @@ nav li a:hover, a:visited{
 }
 /* NAV STYLES END */
 
-  /* FOOTER STYLES START */
-  footer{
-    padding: 10px 10px;
-    margin: 0px;
-    background-color: var(--secondary-accent);
-}
-  /* FOOTER STYLES END */
-
-  /* MAIN STYLES START */
-.my-intro h3{
+  /* MAIN HEADING STYLES START */
+.main-heading h3{
     font-size: 40px;
     text-align: center;
     padding: 15px 15px;
     margin: 10px;
 }
 
-.my-intro p{
+.main-heading p{
     text-align: center;
     color: var(--main-accent)
 }
-/* MAIN STYLES END */
+/* MAIN HEADING STYLES END */
 
-/* INFO SECTIONS START */
-#main{
+/* ABOUT ME SECTION START */
+#main-title{
     padding: 5px 10px 5px 10px;
 }
 
-#main a:link, a:hover, a:visited{
+#main-title a:link, a:hover, a:visited{
     color: var(--main-accent);
     text-decoration: none;
 }
@@ -130,9 +119,9 @@ nav li a:hover, a:visited{
     width: 80%;
     padding-left: 10px;
 }
-/* INFO SECTIONS END */
+/* ABOUT ME SECTION END */
 
-/* WORK SECTIONS START */
+/* WORKS SECTION START */
 .my-info a:link{
     color: var(--link-unvisited);
 }
@@ -141,7 +130,7 @@ nav li a:hover, a:visited{
     text-decoration: none;
     color: var(--main-accent);
 }
-/* WORK SECTIONS END */
+/* WORKS SECTION END */
 
 /* CONACT ME SECTIONS START */
 .my-contact{
@@ -163,4 +152,14 @@ nav li a:hover, a:visited{
       text-decoration: none;
       color: var(--main-accent);
   }
-  /* CONACT ME SECTIONS END */
+  /* CONTACT ME SECTION END */
+
+    /* FOOTER STYLES START */
+    footer{
+        padding: 10px 10px;
+        margin: 0px;
+        background-color: var(--light-green);
+        color: var(--white);
+        font-family: 'Inconsolata', monospace;
+    }
+    /* FOOTER STYLES END */
